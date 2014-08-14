@@ -491,7 +491,7 @@ public class PApplet extends Activity implements PConstants, Runnable {
     //anything else
     else {
       String message = String.format(
-        "Error: Unsupported renderer class: %s", renderer_name)
+        "Error: Unsupported renderer class: %s", renderer_name);
       throw new RuntimeException(message);
     }
 

@@ -4,12 +4,14 @@ freshen: clean build
 clean:
 	ant clean
 
-#variables
+#vars
+android_sdk = /mnt/data/p/libs/android-sdk-linux
+export ANDROID_SDK = $(android_sdk)
 
 #includes
-source_files=$(find . -name *.java)
+include lists.mk
 
-#commands
+#main
 build: $(source_files)
 	ant build
 	ant dist

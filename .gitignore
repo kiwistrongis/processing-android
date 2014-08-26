@@ -1,6 +1,7 @@
 bin
 android-core.zip
 release
+*.jar
 
 .AppleDouble
 ._*
